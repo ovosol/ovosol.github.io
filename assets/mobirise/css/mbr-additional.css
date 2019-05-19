@@ -21,13 +21,6 @@ ul li{
   content: none;  
   
 }
-ul li::before {
-  content: "\2022";  
-  font-weight: bold; 
-  display: inline-block; 
-  width: 1em; 
-  margin-left: -1em; 
-}
 
 .lang-btn{
   padding: 10px !important; 

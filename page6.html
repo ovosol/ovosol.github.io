@@ -20,7 +20,20 @@
 
   <link rel="stylesheet" type="text/css" href="assets/mobirise/css/mbr-2.css">
   
-  
+  <style type="text/css">
+      ul li::before {
+          content: "\2022";  
+          font-weight: bold; 
+          display: inline-block; 
+          width: 1em; 
+          margin-left: -1em; 
+        }
+        .navbar-nav .nav-item::before {
+          margin-left: 0em !important; 
+          content: none;  
+          
+        }
+  </style>
 </head>
 <body>
   <section style="margin-bottom: 50px;" class="menu cid-rl453Gg98V" once="menu" id="menu1-v">
@@ -216,7 +229,10 @@
                     var year = today.getFullYear();
                     document.querySelector('.nowDATE').innerHTML = year;
                 </script>
-                <img src="assets/images/znachki.jpg">
+                <div style="background: #ddebf8;display: flex;justify-content: center;">
+                  <img src="assets/images/znachki.jpg">
+                  <img style="height: 73px;" src="assets/images/lic.png">
+                </div>
             </div>
 
 
@@ -228,13 +244,7 @@
 
                 <h3 class="mbr-text mbr-bold mbr-fonts-style group-title display-5"><span style="font-weight: normal;">Полезные ссылки</span></h3>
                 <div class="mbr-row items mbr-white">
-                    
 
-
-
-                    
-                    
-                    
                 <div class="list-item mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12">
                         <span class="mbr-iconfont listico fa-stop fa mbri-arrow-next"></span>
                         <h5 class="mbr-fonts-style text2 display-7"><a href="#top">Главная</a></h5>
