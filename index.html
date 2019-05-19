@@ -176,13 +176,13 @@
                 		<div data-aos="fade-up"
 					    data-aos-easing="ease-out-cubic"
 					    data-aos-duration="1000" class="mbr-section-btn align-left pt-3">
-                		<a style="padding: 10px 30px;" class="green-btn btn btn-sm btn-white-outline display-4" href="index.html#form1-9">Написать</a>
+                		<a style="padding: 10px 30px;" class="green-btn btn btn-sm btn-white-outline display-4" href="index.html#dragArea-2-1">Написать</a>
                   <a style="padding: 10px 30px;  color: white;" class="btn btn-sm btn-primary-outline display-4" onclick="document.querySelector('.phone-call').style='display: flex'">Заказать звонок</a></div>
                 	</li>
                   <li>
             <h4 data-aos="fade-up"
             data-aos-easing="ease-in-out"
-            data-aos-duration="1000" class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style mbr-white display-5">«Урал-навигатор» позволяет команде использовать множество режимов: ручное управление судном, используя штурвал следящего управления подключенный к «Авторулевому»; автоматическое управление и удержание судна на заданном курсе с погрешностью ±0,5° при тихой погоде относительно источника курса и иные функции. По результатам испытаний «Авторулевого» получен сертификат СТО РМРС.</h4>
+            data-aos-duration="1000" class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style mbr-white display-5">«Урал-навигатор» позволяет команде использовать множество режимов: ручное управление судном, используя штурвал следящего управления подключенный к «Авторулевому»; автоматическое управление и удержание судна на заданном курсе с погрешностью ±0,5° и иные функции. По результатам испытаний «Авторулевого» получен сертификат СТО РМРС.</h4>
                     <div data-aos="fade-up"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="1000" class="mbr-section-btn align-left pt-3">
@@ -200,7 +200,7 @@
 	<h2 data-aos="fade-down"
 					    data-aos-easing="ease-out-cubic"
 					    data-aos-duration="1000"
-					    data-aos-anchor-placement="bottom-bottom" class="titles mbr-fonts-style mbr-section-title align-center display-2">Основные направления компании "ПЕТРОШИП"</h2>
+					    data-aos-anchor-placement="bottom-bottom" class="titles mbr-fonts-style mbr-section-title align-center display-2">Основные направления нашей компании</h2>
 
 	
 	<div class="container">
@@ -595,7 +595,7 @@
 
 
 
-            <div class="col-lg-7 col-md-12 col-sm-12 align-left">
+            <div id="dragArea-2-1" class="col-lg-7 col-md-12 col-sm-12 align-left">
                 <h2 class="title2 mbr-fonts-style mbr-bold display-5">Форма для связи</h2>
                 <div data-form-type="formoid">
                     <!---Formbuilder Form--->
@@ -673,8 +673,10 @@
                     var year = today.getFullYear();
                     document.querySelector('.nowDATE').innerHTML = year;
                 </script>
-                <img src="assets/images/znachki.jpg">
-                <img style="height: 73px;" src="assets/images/lic.png">
+                <div style="background: #ddebf8;margin-right: 25px;display: flex;justify-content: center;">
+                  <img src="assets/images/znachki.jpg">
+                  <img style="height: 73px;" src="assets/images/lic.png">
+                </div>
             </div>
 
 
@@ -747,7 +749,7 @@
 	var slideCount = $('#slider ul li').length;
   var count = false;
 	var slideWidth = $('#slider ul li').width();
-	var slideHeight = $('#slider ul li').height();
+	var slideHeight = $('#slider ul li').height() + 200;
 	var sliderUlWidth = slideCount * slideWidth;
 	
 	$('#slider').css({ width: slideWidth, height: slideHeight });

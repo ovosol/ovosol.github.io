@@ -13,6 +13,21 @@ left: 80%;
 a.top > span{
   margin: -10% 30%;
 }
+ul li{
+  list-style: none;
+}
+.navbar-nav .nav-item::before {
+  margin-left: 0em !important; 
+  content: none;  
+  
+}
+ul li::before {
+  content: "\2022";  
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
 
 .lang-btn{
   padding: 10px !important; 
