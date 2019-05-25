@@ -10,11 +10,24 @@ position: fixed;
 bottom: 5%;
 left: 80%;
 }
+a.top2{
+  width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #274abb;
+z-index: 10000000000000;
+position: fixed;
+bottom: 10%;
+left: 80%;
+}
 .electro{
       padding-top: 10vh;
     padding-bottom: 0vh;
     }
      @media (max-width: 768px) {
+      a.top2{
+bottom: 20%;
+}
        .electro{
       padding-top: 10vh;
     padding-bottom: 0vh;
@@ -151,6 +164,9 @@ nav{
   flex-direction: row;
 }
 @media (min-width: 992px) {
+        a.top2{
+bottom: 15%;
+}
   .cid-rl453Gg98V .navbar-nav .main-menu-animated-line {
     position: absolute;
     left: 0;
